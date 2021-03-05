@@ -20,6 +20,10 @@ int main(int argc, char **argv) {
         return 0;
     }
 
+    if(v){
+        d = 1;
+    }
+
     FILE *fp = stdin;
     Process **PL = NULL;
     int size = readFile(fp, &PL);
