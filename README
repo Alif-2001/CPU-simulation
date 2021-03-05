@@ -1,0 +1,29 @@
+#       CPU simulator in C
+Implemented two CPU scheduling algorithms, FCFS and RR, to complete the execution of a group of mutli-threaded process.
+
+--> Both algorithms work fine.
+--> To increase the size of the Priority queue, change the PQSIZE in thread.c then compile.
+--> For the verbose mode, the detailed information are automatically printed at the end of the output.
+
+## Build the executable
+    to build the simcpu executable, type the following in the comand line:
+```
+make
+```
+
+## Synopsis
+    ./simcpu [OPTION] < [FILENAME]
+
+### Options
+    -d              print detailed information.
+    -v              verbose mode (prints detailed information at the end of the output)
+    -r 'quantum'    simulate round robin scheduling with the given quantum(an integer)
+
+### Example
+```
+./simcpu -v -d -r 50 < input_file
+```
+or
+```
+./simcpu -vd < input_file
+```
